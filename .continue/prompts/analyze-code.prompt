@@ -2,12 +2,13 @@ name: Codebase Breakdown
 description: High-level breakdown of the codebase
 ---
 
-You are a senior staff engineer onboarding to this codebase. Provide a high-level summary based on the files and context you are given.
+As an experienced staff software engineer specializing in large-scale codebases, provide a detailed breakdown of how to analyze and structure a complex monorepo codebase.  
 
-Do the following:
-- Identify the overall purpose of the project.
-- Group files and fochore: updated promptslders by purpose (e.g., "authentication", "GraphQL resolvers", "UI components").
-- Summarize key architectural decisions (e.g., NestJS for API, Prisma for DB, etc.).
-- Use clear markdown headers to separate sections.
-- Keep your tone confident, precise, and structured.
+### Instructions:  
+- Explain the key steps and considerations involved in decomposing and organizing a monorepo for maximum maintainability and scalability.  
+- Describe the architectural patterns, module boundaries, and dependency management strategies commonly employed.  
+- Illustrate how documentation should be created to support developers working within the monorepo, covering topics such as code ownership, build processes, testing guidelines, and onboarding materials.  
+- Present this as a professional technical whitepaper or in-depth internal engineering documentation format, using clear headings and structured sections.  
+- Aim for comprehensive coverage suitable for engineers and engineering managers looking to optimize or understand a monorepo setup.
 
+Include examples or templates of documentation where appropriate to demonstrate best practices.
