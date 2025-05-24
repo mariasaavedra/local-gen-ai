@@ -1,4 +1,4 @@
-name: commit
+name: Generate Commit Message
 description: Generate commit message
 ---
 Given a git diff, output a single-line commit message that follows the Conventional Commits specification:
