@@ -9,6 +9,13 @@ models:
       - chat
       - edit
       - apply
+  - name: CodeLlama 7B Instruct
+    provider: ollama
+    model: codellama:7b-instruct
+    roles:
+      - chat
+      - edit
+      - apply
   - name: Qwen2.5-Coder 3B
     provider: ollama
     model: qwen2.5-coder:3b
@@ -30,6 +37,9 @@ context:
   - provider: problems
   - provider: folder
   - provider: codebase
+  - provider: repo-map
+    params:
+      includeSignatures: false
 docs:
   - name: Nest.js
     startUrl: https://docs.nestjs.com/
@@ -49,20 +59,8 @@ docs:
     startUrl: https://www.prisma.io/docs/llms-full.txt
   - name: React Query
     startUrl: https://tanstack.com/query/latest/docs/framework/react/overview
-prompts:
-  - name: Codebase Breakdown
-    description: Summarize the architecture, structure, and major responsibilities of this codebase.
-    prompt: |
-      You are a senior staff engineer onboarding to this codebase. Your task is to provide a high-level summary of the project structure.
-
-      Please:
-      - Identify the main purpose of the codebase.
-      - Break down the major folders and files by function (e.g., "auth", "API layer", "frontend components", etc.).
-      - Highlight patterns, tech stack (NestJS, Prisma, GraphQL, etc.), and architectural choices.
-      - Use Markdown headers to organize your explanation.
-      - Be concise and avoid regurgitating code unless necessary to illustrate a point.
-    rules:
-      - Avoid speculation—only summarize what's visible.
-      - Use concise technical language.
-      - If unsure about purpose, say so explicitly.
-      - Group related files/folders together.
+rules:
+  - Avoid speculation—only summarize what's visible.
+  - Use concise technical language.
+  - If unsure about purpose, say so explicitly.
+  - Group related files/folders together.
