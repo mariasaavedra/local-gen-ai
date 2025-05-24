@@ -1,0 +1,51 @@
+name: code/assistant
+version: 1.0.0
+schema: v1
+models:
+  - name: Llama 3.1 8B
+    provider: ollama
+    model: llama3.1:8b
+    roles:
+      - chat
+      - edit
+      - apply
+  - name: Qwen2.5-Coder 3B
+    provider: ollama
+    model: qwen2.5-coder:3b
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete
+  - name: Nomic Embed
+    provider: ollama
+    model: nomic-embed-text:latest
+    roles:
+      - embed
+context:
+  - provider: code
+  - provider: docs
+  - provider: diff
+  - provider: terminal
+  - provider: problems
+  - provider: folder
+  - provider: codebase
+docs:
+  - name: Nest.js
+    startUrl: https://docs.nestjs.com/
+  - name: GraphQL
+    startUrl: https://graphql.org/learn/
+  - name: Apollo GraphQL
+    startUrl: https://www.apollographql.com/docs/
+  - name: Apollo Federation
+    startUrl: https://www.apollographql.com/docs/federation/
+  - name: Mantine
+    startUrl: https://mantine.dev/guides/next/ 
+  - name: React
+    startUrl: https://react.dev/reference/react
+  - name: Nx
+    startUrl: https://nx.dev/getting-started/intro
+  - name: Prisma
+    startUrl: https://www.prisma.io/docs/llms-full.txt
+  - name: React Query
+    startUrl: https://tanstack.com/query/latest/docs/framework/react/overview

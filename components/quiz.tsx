@@ -34,13 +34,12 @@ const QuestionCard: React.FC<{
       <h2 className="text-lg font-semibold leading-tight">
         {question.question}
       </h2>
+      {/* Write a comment below */}
       <div className="grid grid-cols-1 gap-4">
         {question.options.map((option, index) => (
           <Button
             key={index}
-            variant={
-              selectedAnswer === answerLabels[index] ? "secondary" : "outline"
-            }
+            variant="secondary"
             className={`h-auto py-6 px-4 justify-start text-left whitespace-normal ${
               showCorrectAnswer && answerLabels[index] === question.answer
                 ? "bg-green-600 hover:bg-green-700"

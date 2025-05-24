@@ -1,5 +1,7 @@
 name: Create README.md
 description: Generate a readme at the root of this project that details its folder structure and functionality.
 ---
+@repo-map
+@tree
 Please create or update the README at the root of this project, it should be a concise and clear README file for your project, including a brief introduction to the project, its features, installation instructions, usage guidelines, and any notable dependencies or requirements.
 
