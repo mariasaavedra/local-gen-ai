@@ -1,9 +1,0 @@
-NODE mv
-SQL >
-
-    SELECT * FROM dub_click_events
-
-TYPE materialized
-DATASOURCE dub_click_events_id
-
-
