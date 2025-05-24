@@ -39,5 +39,4 @@ To learn more about Vercel AI SDK or Next.js take a look at the following resour
 - [Vercel AI Playground](https://play.vercel.ai)
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 
-
-Slight change...
+Big changes soon!
