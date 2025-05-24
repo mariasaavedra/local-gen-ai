@@ -1,8 +1,6 @@
-name: Commit
+name: commit
 description: Generate commit message
 ---
-You are a commit message generator.
-
 Given a git diff, output a single-line commit message that follows the Conventional Commits specification:
 
 Format: <type>[optional scope]: <description>
